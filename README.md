@@ -24,7 +24,7 @@ To replicate the results of our paper, follow these steps:
    cd paper-superiorization-imrt
    ```
 
-3. Initialize and update submodules:
+3. Download the correct version of matRad by initialize and update submodules:
 
    ```bash
    git submodule init
