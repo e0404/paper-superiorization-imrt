@@ -24,7 +24,7 @@ To replicate the results of our paper, follow these steps:
    cd paper-superiorization-imrt
    ```
 
-3. Download the correct version of matRad by initialize and update submodules:
+3. Download the correct version of matRad by initializing and updating submodules:
 
    ```bash
    git submodule init
@@ -45,7 +45,7 @@ To replicate the results of our paper, follow these steps:
    matRad_rc
    ```
 
-7. Prepare the dataset by running the following scripts from the `scripts` folder:
+7. Prepare the datasets by running the following scripts from the `scripts` folder:
    - `Prepare_HN.m` for the Head and Neck dataset.
    - `Prepare_prostate.m` for the Prostate dataset.
    - `Prepare_TG119.m` for the TG119 dataset.
