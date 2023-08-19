@@ -158,7 +158,7 @@ grid minor;
 xlabel('#Iterations');
 ylabel('Objective function value');
 legend({'Optimization','Superiorization'});
-cleanfigure; matlab2tikz('D:\DKFZHomeOffice\paper\superiorization\tikz\super_script_1_objvsiter.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
+cleanfigure; matlab2tikz('super_script_1_objvsiter.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
 
 %%
 hfPlan = figure;
@@ -170,7 +170,7 @@ grid minor;
 xlabel('time [s]');
 ylabel('Objective function value');
 legend({'Optimization','Superiorization'})
-cleanfigure; matlab2tikz('D:\DKFZHomeOffice\paper\superiorization\tikz\super_script_1_objvstime.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
+cleanfigure; matlab2tikz('super_script_1_objvstime.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
 
 %%
 hfPlan = figure;
@@ -182,7 +182,7 @@ grid minor;
 xlabel('#Iterations');
 ylabel('Constraint violation');
 legend({'Optimization','Superiorization'});
-cleanfigure; matlab2tikz('D:\DKFZHomeOffice\paper\superiorization\tikz\super_script_1_constrvsiter.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
+cleanfigure; matlab2tikz('super_script_1_constrvsiter.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
 
 %%
 hfPlan = figure;
@@ -194,4 +194,4 @@ grid minor;
 xlabel('time [s]');
 ylabel('Constraint violation');
 legend({'Optimization','Superiorization'})
-cleanfigure; matlab2tikz('D:\DKFZHomeOffice\paper\superiorization\tikz\super_script_1_constrvstime.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
+cleanfigure; matlab2tikz('super_script_1_constrvstime.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');

@@ -171,7 +171,7 @@ ylabel('')
 xticks([])
 yticks([])
 set(hCMap.Label,'String','dose [Gy]')
-cleanfigure; matlab2tikz('D:\DKFZHomeOffice\paper\superiorization\tikz\super_script_prostate_ipoptPlan.tikz','showInfo',true,'width','\figurewidth','height','\figureheight','relativeDataPath','tikz/');
+cleanfigure; matlab2tikz('super_script_prostate_ipoptPlan.tikz','showInfo',true,'width','\figurewidth','height','\figureheight','relativeDataPath','tikz/');
 drawnow();pause(2);
 close(hfPlan);
 
@@ -189,7 +189,7 @@ ylabel('')
 xticks([])
 yticks([])
 set(hCMap.Label,'String','dose [Gy]')
-cleanfigure; matlab2tikz('D:\DKFZHomeOffice\paper\superiorization\tikz\super_script_prostate_superPlan.tikz','showInfo',true,'width','\figurewidth','height','\figureheight','relativeDataPath','tikz/');
+cleanfigure; matlab2tikz('super_script_prostate_superPlan.tikz','showInfo',true,'width','\figurewidth','height','\figureheight','relativeDataPath','tikz/');
 drawnow();pause(2);
 close(hfPlan);
 
@@ -207,7 +207,7 @@ ylabel('')
 xticks([])
 yticks([])
 set(hCMap.Label,'String','dose [Gy]')
-cleanfigure; matlab2tikz('D:\DKFZHomeOffice\paper\superiorization\tikz\super_script_prostate_diffPlan.tikz','showInfo',true,'width','\figurewidth','height','\figureheight','relativeDataPath','tikz/');
+cleanfigure; matlab2tikz('super_script_prostate_diffPlan.tikz','showInfo',true,'width','\figurewidth','height','\figureheight','relativeDataPath','tikz/');
 drawnow();pause(2);
 close(hfPlan);
 
@@ -228,7 +228,7 @@ allNames = [names1 names2];
 xlim([0 80]);
 
 legend(allNames{:},'Location','NorthOutside','NumColumns',4);
-cleanfigure; matlab2tikz('D:\DKFZHomeOffice\paper\superiorization\tikz\super_script_prostate_dvhs.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
+cleanfigure; matlab2tikz('super_script_prostate_dvhs.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
 
 %%
 hfPlan = figure;
@@ -240,7 +240,7 @@ grid minor;
 xlabel('#Iterations');
 ylabel('Objective function value');
 legend({'Optimization','Superiorization'});
-cleanfigure; matlab2tikz('D:\DKFZHomeOffice\paper\superiorization\tikz\super_script_prostate_objvsiter.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
+cleanfigure; matlab2tikz('super_script_prostate_objvsiter.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
 
 %%
 hfPlan = figure;
@@ -252,7 +252,7 @@ grid minor;
 xlabel('time [s]');
 ylabel('Objective function value');
 legend({'Optimization','Superiorization'})
-cleanfigure; matlab2tikz('D:\DKFZHomeOffice\paper\superiorization\tikz\super_script_prostate_objvstime.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
+cleanfigure; matlab2tikz('super_script_prostate_objvstime.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
 
 %%
 hfPlan = figure;
@@ -264,7 +264,7 @@ grid minor;
 xlabel('#Iterations');
 ylabel('Constraint violation');
 legend({'Optimization','Superiorization'});
-cleanfigure; matlab2tikz('D:\DKFZHomeOffice\paper\superiorization\tikz\super_script_prostate_constrvsiter.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
+cleanfigure; matlab2tikz('super_script_prostate_constrvsiter.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
 
 %%
 hfPlan = figure;
@@ -276,5 +276,5 @@ grid minor;
 xlabel('time [s]');
 ylabel('Constraint violation');
 legend({'Optimization','Superiorization'})
-cleanfigure; matlab2tikz('D:\DKFZHomeOffice\paper\superiorization\tikz\super_script_prostate_constrvstime.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
+cleanfigure; matlab2tikz('super_script_prostate_constrvstime.tikz','showInfo',true,'width','\figurewidth','height','\figureheight');
 
