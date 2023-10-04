@@ -1,6 +1,13 @@
 load HEAD_AND_NECK_super.mat
+%%
 
-%%Change method
+plane = 3;
+slice = 28;
+doseWindow = [0 75]./pln.numOfFractions;
+xWindow = [30 128];
+yWindow = [30 128];
+
+%% Change method
 
 meth = 1;
 
@@ -51,13 +58,6 @@ time = toc;
 
 
 %% Plot IPOPT
-plane = 3;
-slice = 28;
-doseWindow = [0 75]./pln.numOfFractions;
-xWindow = [30 128];
-yWindow = [30 128];
-
-
 hfPlan = figure; 
 hfPlan.WindowState = 'Maximized';
 axIpoptPlan = subplot(2,2,1);

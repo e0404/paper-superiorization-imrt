@@ -1,6 +1,10 @@
 clear all;
 load TG119_super.mat
 
+plane = 3;
+doseWindow = [0 75];
+slice = round(pln.propStf.isoCenter(1,3)./ct.resolution.z);
+
 %% Set Optimization
 
 cst(:,6) = [];

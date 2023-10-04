@@ -1,5 +1,12 @@
 load PROSTATE_super.mat
 
+plane = 3;
+slice = 34;
+doseWindow = [0 80]./pln.numOfFractions;
+xWindow = [28 150];
+yWindow = [40 130];
+
+
 %{
 for i = 1:size(cst,1)
     for j = 1:numel(cst{i,6})
@@ -48,13 +55,6 @@ time = toc;
 
 
 %% Plot IPOPT
-plane = 3;
-slice = 34;
-doseWindow = [0 80]./pln.numOfFractions;
-xWindow = [28 150];
-yWindow = [40 130];
-
-
 hfPlan = figure; 
 hfPlan.WindowState = 'Maximized';
 axIpoptPlan = subplot(2,2,1);

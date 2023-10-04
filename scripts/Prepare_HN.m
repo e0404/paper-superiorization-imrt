@@ -23,23 +23,5 @@ stf                      = matRad_generateStf(ct,cst,pln);
 
 
 dij = matRad_calcPhotonDose(ct,stf,pln,cst);
-%pln.propOpt.tol_obj = 1e-6;
-%pln.propOpt.tol_violation = 1e-6;
-%pln.propOpt.accepted_violation = 1e-5;
-
-%cst{1, 5}.visibleColor = [0.5 0.5 0.5];
-%cst{2, 5}.visibleColor = [0 0 0];
-%cst{3, 5}.visibleColor = [0.4 0.4470 0.7410];
-
-
-%Plot settings
-%plane      = 3;
-%doseWindow = [0 70];
-%slice = round(pln.propStf.isoCenter(1,3)./ct.resolution.z);
-
-plane = 3;
-doseWindow = [0 70];
-slice = round(pln.propStf.isoCenter(1,3)./ct.resolution.z);
-
 
 save HEAD_AND_NECK_super.mat

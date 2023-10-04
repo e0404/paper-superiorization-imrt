@@ -2,12 +2,19 @@ clear
 load TG119_super.mat
 %load TG119_super_protons.mat
 matRad_rc
+
+plane = 3;
+doseWindow = [0 75];
+slice = round(pln.propStf.isoCenter(1,3)./ct.resolution.z);
+%isoLevels = [0.2 0.4 0.6 0.8 0.95 1.0 1.05 1.1]*60;
+isoLevels = [];
+
 %% Set Optimization
 
 cst(:,6) = [];
 
 %Core
-cst{1, 6}{1}=DoseObjectives.matRad_SquaredOverdosing(100, 20)
+cst{1, 6}{1}=DoseObjectives.matRad_SquaredOverdosing(100, 20);
 %cst{1, 6}{2}=DoseConstraints.matRad_MinMaxDose(0, 30, 1, 0.9);
 
 %Target
@@ -77,10 +84,6 @@ time = toc;
 
 
 %% Plot IPOPT
-
-doseWindow = [0 75];
-%isoLevels = [0.2 0.4 0.6 0.8 0.95 1.0 1.05 1.1]*60;
-isoLevels = [];
 
 hfPlan = figure('WindowState','maximized'); 
 axIpoptPlan = subplot(2,2,1);
