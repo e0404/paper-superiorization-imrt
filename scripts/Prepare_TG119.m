@@ -4,7 +4,7 @@ pln.radiationMode                       = 'photons';
 pln.machine                             = 'Generic';
   
 pln.numOfFractions                      = 1;
-pln.propStf.gantryAngles                = [0:72359];
+pln.propStf.gantryAngles                = [0:72:359];
 pln.propStf.couchAngles                 = zeros(1, numel(pln.propStf.gantryAngles));
 pln.propStf.bixelWidth                  = 5;
 pln.propStf.numOfBeams                  = numel(pln.propStf.gantryAngles);
@@ -12,6 +12,7 @@ pln.propStf.isoCenter                   = ones(pln.propStf.numOfBeams,1) * matRa
 pln.propDoseCalc.doseGrid.resolution    = ct.resolution;
 
 pln.propOpt.runDAO = 0;
+pln.propOpt.bioOptimization = 'none';
 
 stf = matRad_generateStf(ct,cst,pln);
 dij = matRad_calcPhotonDose(ct,stf,pln,cst);
